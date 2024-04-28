@@ -1,0 +1,132 @@
+:root{
+    --header-color: #9db3b1;
+    --left-color: #171818;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    
+}
+
+  
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+  
+
+body{
+    display: grid;
+    grid-template-columns:  minmax(20vw,300px) 3fr;
+    grid-template-rows: minmax(300px, 20vw) 3fr;
+    height: 100vh;
+    padding: 0;
+    border: 0;
+    margin:0;
+}
+
+
+
+#header-right{
+    background-color:var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:100px;
+    color: white;
+}
+
+#header-left{
+    background-image: url("./assets/myself.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    
+}
+
+#header-name{
+    text-align: start;
+    font-size: 5vw
+}
+
+#content-left,#content-right{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    
+}
+
+#content-left{
+   
+    background-color: var(--left-color);
+    padding: 30px;
+    color: white;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+    gap:10px;
+
+}
+
+.contact-field{
+    margin-left:8px;
+}
+
+.info{
+    margin-left: 35px;
+
+}
+
+svg{
+    fill: black;
+    border-radius: 25px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    background-size: 100px; 
+}
+
+/* Content right */
+
+ul{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+#content-right{
+    padding-left: 30px;
+}
+
+.content-title,
+.title{
+    
+    background-image: linear-gradient(to top,
+    var(--header-color) 0 20% ,
+    hsla(0, 0%, 100%, 0) 20% 100%
+    );
+    
+    width: fit-content;
+}
+
+
+.content-title{
+    margin-left: 30px;
+    
+}
+
+.content-text{
+    margin-left: 60px;
+    
+}
