@@ -24,8 +24,8 @@
 
 body{
     display: grid;
-    grid-template-columns:  minmax(325px,22vw) 3fr;
-    grid-template-rows: minmax(325px, 22vw) 3fr;
+    grid-template-columns:  minmax(350px,22vw) 3fr;
+    grid-template-rows: minmax(350px, 22vw) 3fr;
     height: 100vh;
     padding: 0;
     border: 0;
