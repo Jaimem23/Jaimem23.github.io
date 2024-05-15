@@ -4,7 +4,7 @@
 
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
+    font-size: calc(1rem + 0.15vw);
     
 }
 
@@ -24,8 +24,8 @@
 
 body{
     display: grid;
-    grid-template-columns:  minmax(20vw,300px) 3fr;
-    grid-template-rows: minmax(300px, 20vw) 3fr;
+    grid-template-columns:  minmax(325px,22vw) 3fr;
+    grid-template-rows: minmax(325px, 22vw) 3fr;
     height: 100vh;
     padding: 0;
     border: 0;
@@ -47,12 +47,12 @@ body{
     background-image: url("./assets/myself.png");
     background-repeat: no-repeat;
     background-size: 100% 100% ;
-    
+    aspect-ratio: 1/1;
 }
 
 #header-name{
     text-align: start;
-    font-size: 5vw
+    font-size: 6.5vw;
 }
 
 #content-left,#content-right{
